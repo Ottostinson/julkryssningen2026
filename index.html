@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Julkryssningen2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="snofall"></div>
+    <h1>Välkommen till julkryssningen 2026!</h1>
+
+    <h2>Årets viktigaste familjehändelse</h2>
+
+    <p>
+        Äntligen är det dags att återigen ge oss ut
+        på Östersjön för en oförglömlig julkryssning!
+    </p>
+
+<div id="start">
+    <h2>Ansök om din sjörövarlicens!</h2>
+
+    <p>Ange ditt namn:</p>
+    <input type="text" id="namn">
+
+    <button onclick="startaProv()">Påbörja prövningen</button>
+</div>
+
+<div id="prov" style="display: none;">
+    <h2 id="fråga"></h2>
+
+    <button onclick="svaraJa()">JA!</button>
+    <button onclick="svaraNej()">NEJ</button>
+
+    <p id="svar"></p>
+    <p id="nummer"></p>
+</div>
+
+<div id="licens" style="display: none;">
+    <h2>SJÖRÖVARLICENS BEVILJAD!</h2>
+
+    <h1 id="licensNamn"></h1>
+
+    <p>
+        Innehavaren har genomgått kaptenens
+        tio prövningar med godkänt resultat.
+    </p>
+
+    <h3>Under kaptenens beskydd!</h3>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
